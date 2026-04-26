@@ -12,6 +12,10 @@ const noteSchema=new mongoose.Schema({
     content:{
         type:String,
     },
+    created_at:{
+        type:Date,
+        required:true
+    },
 });
 
 const note=mongoose.model("note",noteSchema);
