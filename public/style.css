@@ -3,7 +3,15 @@ body{
     background-color: lavenderblush;
 }
 
-
+h1{
+    text-align: center;
+    color: indigo;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px auto;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
 .note{
     background-color: #ffffff;
     border-left: 5px solid hotpink;
