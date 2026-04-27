@@ -17,6 +17,9 @@
             <div class="content">
                 content:<%=note.content%>
             </div>
+            <br/>
+            <p>Time: <%= note.created_at.toString().split(" ")[4]%></p>
+            <p>Date: <%= note.created_at.toString().split(" ").slice(0.3).join("-")%></p>
         </div>
         <br/>
         <hr/>

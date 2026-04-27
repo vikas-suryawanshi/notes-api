@@ -55,7 +55,7 @@ app.post("/notes",(req,res)=>{
         author:author,
         title:title,
         content:content,
-        created_at=new Date(),
+        created_at:new Date(),
     });
     note1.save().then((data)=>{
         console.log(data);
