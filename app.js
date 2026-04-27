@@ -4,8 +4,6 @@ const port=8080;
 const path=require("path");
 const mongoose=require("mongoose");
 const Note=require("./models/note.js");
-const note = require("./models/note.js");
-
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.static(path.join(__dirname,"public")));
@@ -39,7 +37,7 @@ async function main() {
 
 // index route
 app.get("/notes",async(req,res)=>{
-    let notes=await note.find();
+    let notes=await Note.find();
     res.render("index.ejs",{notes});
 })
 

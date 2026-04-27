@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All notes<title>
+    <title>All notes</title>
 </head>
 <body>
-    
+    <%for(let note of notes){%>
+        <div class="note">
+            <h1>author:<%= note.author%></h1>
+            <p>title:<%= note.title%></p>
+            <div class="content">
+                content:<%=note.content%>
+            </div>
+        </div>
+    <%}%>
 </body>
 </html>
