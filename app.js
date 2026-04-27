@@ -42,6 +42,12 @@ app.get("/notes",async(req,res)=>{
 })
 
 
+// crete a new notes
+// get form routes
+app.get("/notes/new",(req,res)=>{
+    res.render("new.ejs");
+})
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");
