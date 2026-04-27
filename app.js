@@ -48,6 +48,23 @@ app.get("/notes/new",(req,res)=>{
     res.render("new.ejs");
 })
 
+// post routes
+app.post("/notes",(req,res)=>{
+    let {author,title,content}=req.body;
+    let note1=new Note({
+        author:author,
+        title:title,
+        content:content,
+        created_at=new Date(),
+    });
+    note1.save().then((data)=>{
+        console.log(data);
+    }).catch((err)=>{
+        console.log(err);
+    });
+    res.redirect("/notes");
+})
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");
