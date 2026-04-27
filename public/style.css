@@ -1,15 +1,40 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #ffe4ec;
+    background-color: lavenderblush;
 }
 
 
 .note{
     background-color: #ffffff;
-    border-left: 5px solid #ff4d88;
+    border-left: 5px solid hotpink;
     margin: 15px 0;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px lightgray;
     
+}
+
+
+h3{
+    margin: 0;
+    color: deeppink;
+}
+
+p{
+    margin: 5px 0;
+    color: gray;
+}
+
+.content{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: mistyrose;
+    border-radius: 5px;
+    color: maroon;
+}
+
+.note:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
 }
