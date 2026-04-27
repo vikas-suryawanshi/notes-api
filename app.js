@@ -7,6 +7,9 @@ const Note=require("./models/note.js");
 const note = require("./models/note.js");
 
 app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"views"));
+app.use(express.static(path.join(__dirname,"public")));
+app.use(express.urlencoded({extended: true}));
 
 // monggose connect
 main()
@@ -20,7 +23,7 @@ async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/notes');
 }
 
-// add info for understanding add or not
+// intialize databse
 // const Note1=new note({
 //     author:"vikas",
 //     title:"devlopment",
@@ -33,6 +36,14 @@ async function main() {
 // }).catch((err)=>{
 //     console.log(err);
 // })
+
+// index route
+app.get("/notes",async(req,res)=>{
+    let notes=await note.find();
+    res.render("index.ejs",{notes});
+})
+
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");
