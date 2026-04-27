@@ -6,10 +6,12 @@
     <title>All notes</title>
 </head>
 <body>
+    <h1>All notes</h1>
+    <br/>
     <%for(let note of notes){%>
         <div class="note">
             <h1>author:<%= note.author%></h1>
-            <p>title:<%= note.title%></p>
+            <p>title:<b><%= note.title%></b></p>
             <div class="content">
                 content:<%=note.content%>
             </div>
