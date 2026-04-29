@@ -74,6 +74,15 @@ app.get("/notes/:id/edit",async(req,res)=>{
     res.render("edit.ejs",{note});
 })
 
+// update route
+app.put("/notes/:id",async(req,res)=>{
+    let {id}=req.params;
+    let {content:newContent}=req.body;
+    let updateChat= await Note.findByIdAndUpdate(id,{content:newContent});
+    res.redirect("/notes");
+
+})
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");

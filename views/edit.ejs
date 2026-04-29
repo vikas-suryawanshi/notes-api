@@ -8,10 +8,10 @@
 <body>
     <p>Edit your info:<b><%= note.author%></b></p>
     <p>Edit your info:<b><%= note.author%></b></p>
-    <form>
-        <textarea rows="15" cols="25"><%=note.content%></textarea>
+    <form method="post" action="/notes/<%=note._id%>?_method=put">
+        <textarea name="content" rows="15" cols="25"><%=note.content%></textarea>
         <br/>
-        <button>update</button>
+        <button type="submit">update</button>
     </form>
 
 </body>
