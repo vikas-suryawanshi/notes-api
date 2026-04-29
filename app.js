@@ -66,8 +66,10 @@ app.post("/notes",(req,res)=>{
 })
 
 // edit route
-app.get("/notes/:id/edit",(req,res)=>{
-    res.render("edit.ejs");
+app.get("/notes/:id/edit",async(req,res)=>{
+    let {id}=req.params;
+    let note=await Note.findById(id);
+    res.render("edit.ejs",{note});
 })
 
 
