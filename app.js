@@ -68,8 +68,10 @@ app.post("/notes",(req,res)=>{
 })
 
 // new show route
-app.get("/notes/:id",(req,res)=>{
-    res.redirect("edit.ejs");
+app.get("/notes/:id",async(req,res)=>{
+    let {id}=req.params;
+    let note=await Note.findById(id);
+    res.render("show.ejs",{note});
 })
 
 // edit route
