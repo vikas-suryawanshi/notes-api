@@ -83,6 +83,14 @@ app.put("/notes/:id",async(req,res)=>{
 
 })
 
+// destroy route
+app.delete("/notes/:id",async(req,res)=>{
+    let {id}=req.params;
+    let deleteNotes=await Note.findByIdAndDelete(id);
+    console.log(deleteNotes);
+    res.redirect("/notes");
+})
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");
