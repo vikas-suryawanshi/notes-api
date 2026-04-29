@@ -20,6 +20,7 @@
             <br/>
             <p>Time: <%= note.created_at.toString().split(" ")[4]%></p>
             <p>Date: <%= note.created_at.toString().split(" ").slice(0.3).join("-")%></p>
+            <form method="get" action="/notes/<%=note._id%>/edit"><button>Edit</button></form>
         </div>
         <br/>
         <hr/>

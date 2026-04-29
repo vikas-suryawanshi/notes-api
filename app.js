@@ -65,6 +65,11 @@ app.post("/notes",(req,res)=>{
     res.redirect("/notes");
 })
 
+// edit route
+app.get("/notes/:id/edit",(req,res)=>{
+    res.render("edit.ejs");
+})
+
 
 app.get("/",(req,res)=>{
     res.send("root is working");
