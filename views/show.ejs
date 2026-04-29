@@ -8,6 +8,10 @@
 <body>
     <p>Name:<b><%= note.author%></b></p>
     <p>Title:<b><%= note.title%></b></p>
-    <textarea name="content" rows="7" cols="25"><%=note.content%></textarea> 
+    <textarea name="content" rows="7" cols="25"><%=note.content%></textarea>
+    <br/>
+    <form method="get" action="/notes">
+        <button type="submit">back</button>
+    </form>    
 </body>
 </html>
