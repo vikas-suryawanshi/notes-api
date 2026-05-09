@@ -46,3 +46,9 @@ p{
   transform: scale(1.01);
   transition: 0.2s;
 }
+
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white !important;
+}
