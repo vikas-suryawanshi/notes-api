@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All notes</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/button.css">
-</head>
-<body>
+<% layout("/layouts/boilerplate.ejs") %>
     <h1>All notes</h1>
     <form method="get" action="/notes/new"><button>Create New</button></form>
     <br/>
@@ -28,12 +19,7 @@
                 <form method="get" action="/notes/<%=note._id%>"><button>show</button></form>
 
             </div>
-            </div>
-            </div>
-            </div>
         </div>
         <br/>
-        <hr/>
+        </hr>
     <%}%>
-</body>
-</html>
