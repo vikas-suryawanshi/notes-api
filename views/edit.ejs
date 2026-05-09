@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edit info</title>
-</head>
-<body>
+<% layout("/layouts/boilerplate.ejs") %>
     <p>Edit your info:<b><%= note.author%></b></p>
     <p>Edit your info:<b><%= note.author%></b></p>
     <form method="post" action="/notes/<%=note._id%>?_method=put">
@@ -13,6 +6,3 @@
         <br/>
         <button type="submit">update</button>
     </form>
-
-</body>
-</html>
