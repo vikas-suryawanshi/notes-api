@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crete new note</title>
-</head>
-<body>
+<% layout("/layouts/boilerplate.ejs") %>
     <h3>crete a new note</h3>
     <form method="post" action="/notes">
         <input placeholder="author name" name="author">
@@ -16,6 +9,3 @@
         <br/> <br/>
         <button>Add note</button>
     </form>
-
-</body>
-</html>
