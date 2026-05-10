@@ -9,12 +9,10 @@
             <br/>
             <p>Time: <%= note.created_at.toString().split(" ")[4]%></p>
             <p>Date: <%= note.created_at.toString().split(" ").slice(0.3).join("-")%></p>
-            <div class="button">
-
+            <div class="btn-container">
+                <form method="get" action="/notes/<%=note._id%>"><button class="btn btn-success">show</button></form>
                 <form method="get" action="/notes/<%=note._id%>/edit"><button class="btn btn-primary">Edit</button></form>
-                <form method="post" action="/notes/<%=note._id%>?_method=delete"><button>Delete</button></form>
-                <form method="get" action="/notes/<%=note._id%>"><button>show</button></form>
-
+                <form method="post" action="/notes/<%=note._id%>?_method=delete"><button class="btn btn-danger">Delete</button></form>
             </div>
         </div>
         <br/>
