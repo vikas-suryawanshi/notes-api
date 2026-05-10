@@ -13,13 +13,11 @@ h1{
     letter-spacing: 1px;
 }
 .note{
-    background-color: #ffffff;
-    border-left: 5px solid hotpink;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px lightgray;
-    
+    background-color: white;
+    border-left: 6px solid #6c63ff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -34,12 +32,11 @@ p{
 }
 
 .content{
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: mistyrose;
-    border-radius: 5px;
-    color: maroon;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    width: 100%;
 }
 
 .note:hover {
