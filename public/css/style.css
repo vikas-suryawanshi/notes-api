@@ -69,3 +69,15 @@ p{
     align-items: center;
     margin: 1rem;
 }
+
+/* footer */
+.f-info{
+    text-align: center;
+    background-color: #ebebeb;
+    height:  8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
