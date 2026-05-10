@@ -99,3 +99,11 @@ p{
     justify-content: center;
 
 }
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.footer-link{
+    margin-right: 1rem;
+}
