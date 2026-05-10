@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: lavenderblush;
+    background-color: #f5f7fb;
 }
 
 h1{
@@ -23,8 +23,17 @@ h1{
 
 
 h3{
-    margin: 0;
-    color: deeppink;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #718096 !important;
+    margin-bottom: 4px !important;
+}
+
+h3 b{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
 }
 
 p{
