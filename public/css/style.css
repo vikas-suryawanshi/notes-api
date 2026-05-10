@@ -32,11 +32,11 @@ p{
 }
 
 .content{
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    width: 100%;
+    background: #eef2ff;
+    border-left: 3px solid #6366f1;
+    margin-top: 8px;
+    padding: 10px 14px;
+    border-radius: 4px;
 }
 
 .note:hover {
