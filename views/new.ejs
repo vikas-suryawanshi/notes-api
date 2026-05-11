@@ -1,11 +1,10 @@
 <% layout("/layouts/boilerplate.ejs") %>
-    <h3>crete a new note</h3>
-    <form method="post" action="/notes">
-        <input placeholder="author name" name="author">
-        <br/> <br/>
-        <input placeholder="what`s your title ?" name="title">
-        <br/> <br/>
-        <textarea name="content" placeholder="put your content" ></textarea>
-        <br/> <br/>
-        <button>Add note</button>
-    </form>
+    <div class="new">
+        <h2>Create New Note</h2>
+        <form method="post" action="/notes">
+            <input placeholder="author name" name="author">
+            <input placeholder="what`s your title ?" name="title">
+            <textarea name="content" placeholder="put your content" ></textarea>
+            <button>+ Add Note</button>
+        </form>
+    </div>
