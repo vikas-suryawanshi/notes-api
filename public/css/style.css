@@ -159,8 +159,11 @@ form{
     text-align: center;
     margin-bottom: 2rem;
     font-weight: 700;
+    background: linear-gradient(to right, #7c3aed, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
-
 .new input,
 .new textarea{
     width: 100%;
