@@ -128,3 +128,11 @@ p{
     padding: 1rem;
     border-radius: 12px;
 }
+
+form{
+    display: flex;
+    justify-content: flex-end;
+}
+.show button{
+    margin: 1rem;
+}
