@@ -1,4 +1,7 @@
 body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background: #f4f7fb;
 }    
@@ -138,4 +141,49 @@ form{
 }
 .show button{
     margin: 1rem;
+}
+
+
+/* add new note page */
+.new{
+    width: 40rem;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.new h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.new input,
+.new textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.new input:focus,
+.new textarea:focus{
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.new form{
+    display: flex;
+    flex-direction: column;
+}
+
+.new button{
+    align-self: flex-end;
+}
+textarea{
+    resize: none;
 }
