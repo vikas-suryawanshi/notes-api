@@ -1,9 +1,10 @@
 <% layout("/layouts/boilerplate.ejs") %>
     <div class="show">
-        <p>Name:<b><%= note.author%></b></p>
-        <p>Title:<b><%= note.title%></b></p>
-        <textarea name="content" rows="7" cols="25"><%=note.content%></textarea>
-        <br/>
+        <h2 class="label">Author: <b><%= note.author%></b></h2>
+        <p class="label">Title:<b> <%= note.title%></b></p>
+        <div class="show-description">
+            <%= note.content %>
+        </div>
         <form method="get" action="/notes">
             <button type="submit">back</button>
         </form>

@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #f5f7fb;
-}
+    background: #f4f7fb;
+}    
 
 h1{
     text-align: center;
@@ -109,13 +109,22 @@ p{
 }
 /* show page */
 .show{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    margin: 20px 30%;
-    padding: 16px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px lightgray;
+    width: 40rem;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.label{
+    color: #666;
+    font-size: 1.2rem;
+}
+.show-description{
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 12px;
 }
