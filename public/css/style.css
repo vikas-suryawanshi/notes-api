@@ -190,3 +190,14 @@ form{
 textarea{
     resize: none;
 }
+
+/* edit form */
+.edit{
+    width: 42rem;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
