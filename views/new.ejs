@@ -3,6 +3,7 @@
         <h2>Create New Note</h2>
         <form method="post" action="/notes" novalidate>
             <input placeholder="author name" name="author" required>
+            <div class="invalid-feedback">Please enter your name.</div>
             <input placeholder="what`s your title ?" name="title" required>
             <textarea name="content" placeholder="put your content" required></textarea>
             <button class="btn btn-success">+ Add Note</button>
