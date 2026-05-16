@@ -4,6 +4,7 @@
         <p>Title:<b><%= note.title%></b></p>
         <form method="post" action="/notes/<%=note._id%>?_method=put" novalidate needs-validation>
             <textarea name="content" required><%=note.content%></textarea>
+            <div class="invalid-feedback"></div>
             <button type="submit">update</button>
         </form>
     </div>
