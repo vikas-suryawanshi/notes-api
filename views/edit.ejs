@@ -5,6 +5,7 @@
         <form method="post" action="/notes/<%=note._id%>?_method=put" novalidate needs-validation>
             <textarea name="content" required><%=note.content%></textarea>
             <div class="invalid-feedback">add your content</div>
+                
             <button type="submit">update</button>
         </form>
     </div>
